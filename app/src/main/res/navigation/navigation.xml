@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/bangunDatarFragment">
+
+    <fragment android:id="@+id/aboutFragment" android:name="org.d3if4036.praassessment.AboutFragment"
+              android:label="About"/>
+    <fragment android:id="@+id/bangunDatarFragment" android:name="org.d3if4036.praassessment.BangunDatarFragment"
+              android:label="Pra-Asessment" tools:layout="@layout/fragment_bangun_datar">
+        <action android:id="@+id/action_bangunDatarFragment_to_persegiPanjangFragment"
+                app:destination="@id/persegiPanjangFragment"/>
+        <action android:id="@+id/action_bangunDatarFragment_to_segitigaSikusikuFragment"
+                app:destination="@id/segitigaSikusikuFragment"/>
+    </fragment>
+    <fragment android:id="@+id/persegiPanjangFragment" android:name="org.d3if4036.praassessment.PersegiPanjangFragment"
+              android:label="Persegi Panjang" tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment android:id="@+id/segitigaSikusikuFragment"
+              android:name="org.d3if4036.praassessment.SegitigaSikusikuFragment"
+              android:label="Segitiga Siku-Siku" tools:layout="@layout/fragment_segitiga_sikusiku"/>
+</navigation>
